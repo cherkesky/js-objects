@@ -2,7 +2,7 @@
 // Lightning Exercise 1: Given two options of data structures - array or object - which should you use? You need to represent a red 2015 Ford Mustang in your code.
 
 const car = {
-  make: "Ford", 
+  make: "Ford",
   model: "Mustang",
   Year: 2015,
   color: "Red"
@@ -20,9 +20,9 @@ console.log("Animals", animals);
 // Lightning Exercise 3: Define an object for four family members, and put each object in an array named familyMembers. Each family member object that you create should have the same keys on them, but the values will be different.
 
 const dad = {
-gender: "Male",
-age: 68,
-profession: "Teacher"
+  gender: "Male",
+  age: 68,
+  profession: "Teacher"
 }
 
 const mom = {
@@ -46,3 +46,21 @@ const daughter = {
 const familyMembers = [dad, mom, son, daughter];
 
 console.log("Family Members", familyMembers);
+
+// Lightning Exercise: Given the object below, output each of the values to the console using dot notation.
+
+const wardrobe = {
+  height: 80,
+  manufacturer: "Killibrew & Sons",
+  contents: ["Dress shirt", "Jeans", "Suit", "Skirt", "Tennis shoes"],
+  depth: 38,
+  width: 50
+}
+
+console.log(`Wardrode:
+ Height: ${wardrobe.height} 
+ Manufacturer: ${wardrobe.manufacturer}
+ Content: ${wardrobe.contents} 
+ Depth: ${wardrobe.depth} 
+ Width: ${wardrobe.width}`);
+
