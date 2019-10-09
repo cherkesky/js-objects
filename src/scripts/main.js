@@ -64,3 +64,37 @@ console.log(`Wardrode:
  Depth: ${wardrobe.depth} 
  Width: ${wardrobe.width}`);
 
+
+//  Time to practice dot and square-bracket notation. Use the following object to complete the lightning exercises below.
+
+const empireStateBuilding = {
+  stories: 103,
+  height: 1453,
+  address: "350 Fifth Avenue, Manhattan, New York 10118",
+  squareFeet: 2768591,
+  constructionDate: 1931,
+  cost: 40948900,
+  owner: "Empire State Realty Trust",
+  eastWestLength: 424,
+  northSouthLength: 187,
+  architect: "Shreve, Lamb & Harmon"
+}
+
+// Lightning Exercises 1: Use dot notation to output all of the dimensions of the Empire State Building to the console.
+console.log(`Empire State Building Dimensions :
+ Height: ${empireStateBuilding.height} 
+ SQFT: ${empireStateBuilding.squareFeet}
+ East West Lenght: ${empireStateBuilding.eastWestLength} 
+ North South Length: ${empireStateBuilding.northSouthLength} 
+ `);
+
+// Lightning Exercises 2: Use square bracket notation to output the remaining 5 properties to the console. Create 5 variables first with the keys as their values. Use those variables to look up the values.
+console.log(`Empire State Building Additional Properties :
+ Stories: ${empireStateBuilding["stories"]} 
+ Address: ${empireStateBuilding["address"]}
+ Construction Date: ${empireStateBuilding["constructionDate"]} 
+ Cost: ${empireStateBuilding["cost"]} 
+ Architect: ${empireStateBuilding["architect"]} 
+ `);
+
+
