@@ -56,14 +56,13 @@ const wardrobe = {
   depth: 38,
   width: 50
 }
-
+//test
 console.log(`Wardrode:
  Height: ${wardrobe.height} 
  Manufacturer: ${wardrobe.manufacturer}
  Content: ${wardrobe.contents} 
  Depth: ${wardrobe.depth} 
  Width: ${wardrobe.width}`);
-
 
 //  Time to practice dot and square-bracket notation. Use the following object to complete the lightning exercises below.
 
@@ -89,12 +88,18 @@ console.log(`Empire State Building Dimensions :
  `);
 
 // Lightning Exercises 2: Use square bracket notation to output the remaining 5 properties to the console. Create 5 variables first with the keys as their values. Use those variables to look up the values.
-console.log(`Empire State Building Additional Properties :
- Stories: ${empireStateBuilding["stories"]} 
- Address: ${empireStateBuilding["address"]}
- Construction Date: ${empireStateBuilding["constructionDate"]} 
- Cost: ${empireStateBuilding["cost"]} 
- Architect: ${empireStateBuilding["architect"]} 
- `);
 
+const addressKey = "address";
+const constructionKey="constructionDate";
+const ownerKey="owner";
+const costKey="cost";
+const architectKey="architect"
+
+console.log(`Empire State Building Additional Properties :
+ Address: ${empireStateBuilding[addressKey]}
+ Construction Date: ${empireStateBuilding[constructionKey]} 
+ Owner: ${empireStateBuilding[ownerKey]}
+ Cost: ${empireStateBuilding[costKey]} 
+ Architect: ${empireStateBuilding[architectKey]} 
+ `);
 
