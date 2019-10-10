@@ -103,3 +103,70 @@ console.log(`Empire State Building Additional Properties :
  Architect: ${empireStateBuilding[architectKey]} 
  `);
 
+//  Lightning Exercise
+// Examine the object below
+
+const nashvilleSoftwareSchool = {
+  founded: 2012,
+  director: "John Wark",
+  instructors: {
+      fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+      partTime: ["Zoe", "Nathan"]
+  },
+  address: "500 Interstate Blvd. S"
+}
+
+// Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
+
+const ourInstructors = nashvilleSoftwareSchool.instructors;
+
+console.log("Our full time instructors are:")
+for (i=0; i<ourInstructors.fullTime.length; i++){
+  console.log(`Name: ${ourInstructors.fullTime[i]}`);
+}
+console.log("Our part time instructors are:")
+for (i=0; i<ourInstructors.partTime.length; i++){
+  console.log(`Name: ${ourInstructors.partTime[i]}`);
+}
+
+// Lightning Exercise 2: Output only Andy and Zoe in the console.
+console.log(`${ourInstructors.fullTime[4]} And ${ourInstructors.partTime[0]} are the requested output for this exercise `)
+
+
+// Practice: Accessing Property Values
+const beatles = {
+  albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour", "Something New"],
+  history: {
+      formed: 1960,
+      disbanded: 1970
+  },
+  members: [
+      {
+          name: "George Harrison",
+          birth: 1943,
+          death: 2001
+      },
+      {
+          name: "Paul McCartney",
+          birth: 1942,
+          death: null
+      },
+      {
+          name: "John Lennon",
+          birth: 1940,
+          death: 1980
+      },
+      {
+          name: "Ringo Starr",
+          birth: 1940,
+          death: null
+      }
+  ]
+}
+
+// Output the following value to the console.
+
+// Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. He contributed heavily to the Magical Myster Tour Album.
+
+console.log(`${beatles.members[1].name} was in the Beatles from ${beatles.history.formed} to ${beatles.history.disbanded}. He was born in ${beatles.members[1].birth}. He contributed heavily to the ${beatles.albums[3]} Album`);
+
