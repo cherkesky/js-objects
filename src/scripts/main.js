@@ -103,3 +103,31 @@ console.log(`Empire State Building Additional Properties :
  Architect: ${empireStateBuilding[architectKey]} 
  `);
 
+//  Lightning Exercise
+// Examine the object below
+
+const nashvilleSoftwareSchool = {
+  founded: 2012,
+  director: "John Wark",
+  instructors: {
+      fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+      partTime: ["Zoe", "Nathan"]
+  },
+  address: "500 Interstate Blvd. S"
+}
+
+// Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
+
+const ourInstructors = nashvilleSoftwareSchool.instructors;
+
+console.log("Our full time instructors are:")
+for (i=0; i<ourInstructors.fullTime.length; i++){
+  console.log(`Name: ${ourInstructors.fullTime[i]}`);
+}
+console.log("Our part time instructors are:")
+for (i=0; i<ourInstructors.partTime.length; i++){
+  console.log(`Name: ${ourInstructors.partTime[i]}`);
+}
+
+// Lightning Exercise 2: Output only Andy and Zoe in the console.
+console.log(`${ourInstructors.fullTime[4]} And ${ourInstructors.partTime[0]} are the requested output for this exercise `)
